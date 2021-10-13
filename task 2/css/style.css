@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url(../fonts/HelveticaNeue-Light/HelveticaNeueCyr-Light.eot);
+    src: url(../fonts/HelveticaNeue-Light/HelveticaNeueCyr-Light.ttf);
+    src: url(../fonts/HelveticaNeue-Light/HelveticaNeueCyr-Light.woff);
+    src: url(../fonts/HelveticaNeue-Light/HelveticaNeueCyr-Light.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url(../fonts/HelveticaNeue-Bold/HelveticaNeueCyr-Bold.eot);
+    src: url(../fonts/HelveticaNeue-Bold/HelveticaNeueCyr-Bold.ttf);
+    src: url(../fonts/HelveticaNeue-Bold/HelveticaNeueCyr-Bold.woff);
+    src: url(../fonts/HelveticaNeue-Bold/HelveticaNeueCyr-Bold.woff2);
+}
+
+html, body {
+    width: 100%;
+    font-family: 'Helvetica Neue Light';
+    font-weight: 500;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1235px;
+    margin: 170px auto 0;
+    text-align: center;
+}
+
+h1 span {
+    font-family: 'Helvetica Neue Bold';
+    font-size: 41px;
+    color: #2fa2c3;
+}
+
+h1 {
+    color: #666;
+    font-size: 18px;
+    font-family: 'Helvetica Neue Light';
+    text-transform: capitalize;
+}
+
+form.login-form {
+    max-width: 440px;
+    height: 310px;
+    border: 1px solid rgba(153, 153, 153, .33);
+    border-radius: 5.5px;
+    margin: 34px auto 0;
+    padding: 34px 72px;
+    text-align: left;
+}
+
+.login-form .mail {
+    position: relative;
+}
+
+.login-form .mail::before {
+    content: "\f007";
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.login-form .password {
+    margin-top: 34px;
+    position: relative;
+}
+
+.login-form .password::before {
+    content: "\f023";
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.login-form .is-valid.mail::after, .login-form .is-valid.password::after {
+    content: "\f00c";
+    position: absolute;
+    top: 12px;
+    right: -20px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: #14722d;
+    font-size: 14px;
+}
+
+.login-form .is-invalid.mail::after, .login-form .is-invalid.password::after {
+    content: "\f00d";
+    position: absolute;
+    top: 12px;
+    right: -20px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: #d30606;
+    font-size: 14px;
+}
+
+.login-form .mail input , .login-form .password input {
+    width: 295px;
+    height: 40px;
+    border: 1px solid rgba(153, 153, 153, .28);
+    border-radius: 5.5px;
+    padding-left: 45px;
+}
+
+.login-form .is-valid input {
+    border-color: #14722d;
+}
+
+.login-form .mail input::placeholder , .login-form .password input::placeholder {
+    font-family: 'Helvetica Neue Light';
+    font-size: 14px;
+    color: #666;
+    letter-spacing: -.14px;
+}
+
+.login-form .submit-btn {
+    margin-top: 40px;
+    font-family: 'Helvetica Neue Light';
+    font-size: 18px;
+    color: #fff;
+    background-color: #2fa2c3;
+    letter-spacing: -.14px;
+    box-shadow: 2px 2px 3px #2d7f96;
+    border: none;
+    outline: none;
+    padding: 17px 33px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.login-form .forgot-password {
+    font-family: 'Helvetica Neue Light';
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.login-form .forgot-password a {
+    color: #36a2c1;
+    text-decoration: none;
+}
+
+.login-form .warning-sign {
+    display: none;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    font-family: 'Helvetica Neue Light';
+    font-size: 10px;
+    color: #d30606;
+    
+}
+
+.login-form .is-invalid .warning-sign {
+    display: block;
+}

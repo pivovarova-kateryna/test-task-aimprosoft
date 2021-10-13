@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimprosoft Frontend test task 1 - Pyvovarova </title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+    <script src="https://kit.fontawesome.com/cd42d94daf.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="lil-container">
+                <nav>
+                    <div class="burger-menu">
+                        <button data-menu></button>
+                    </div>
+                    <div class="opened-menu">
+                        <div class="heading">
+                            <span>Menu</span>
+                            <button data-close class="close-btn"></button>
+                        </div>
+                        <form action="" class="search-form">
+                            <input type="search" placeholder="O QUE ESTA PROCURANDO?">
+                            <button type="submit"></button>
+                        </form>
+
+                        <div class="menu-wrapper">
+                            <ul class="main-menu">
+                                <li>
+                                    <a href="#">SOBRE</a>
+                                    <button data-openSubmenu class="open-submenu"></button>
+                                </li>
+                                <li>
+                                    <a href="#">COLECOES</a>
+                                    <button data-openSubmenu class="open-submenu"></button>
+                                </li>
+                                <li>
+                                    <a href="#">CATEGORIA</a>
+                                    <button data-openSubmenu class="open-submenu"></button>
+                                    <ul data-submenu class="submenu">
+                                        <li><a href="#">JAQUETAS</a></li>
+                                        <li><a href="#">SHORTS</a></li>
+                                        <li><a href="#">CORTA-VENTO</a></li>
+                                        <li><a href="#">CAMISAS</a></li>
+                                        <li><a href="#">CALCAS</a></li>
+                                        <li><a href="#">CAMISETAS</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">LOOKS</a>
+                                    <button data-openSubmenu class="open-submenu"></button>
+                                </li>
+                                <li>
+                                    <a href="#">CONTATO</a>
+                                    <button data-openSubmenu class="open-submenu"></button>
+                                </li>
+                            </ul>
+                            <div class="socials">
+                                <ul class="soc-nav">
+                                    <li><a href="#">
+                                        <i class="fa fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="fa fa-brands fa-twitter"></i>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="fa fa-brands fa-instagram"></i>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                </nav>
+
+                <h1>CLOTH & FASHION</h1>
+
+                <div class="customer-nav">
+                    <a href="#" class="login-btn">Login</a>
+                    <button data-cart class="cart-btn" data-total="88"></button>  
+                    
+                </div>
+
+                <div data-openedCart class="header-mini-cart">
+                    <div class="single-cart-product">
+                        <img src="img/prod3.png" alt="product name">
+                        <div class="cart-product-info">
+                            <span class="product-name">Nome do Produto</span>
+                            <button class="close-btn">
+                                <i class="fa fas fa-times"></i>
+                            </button>
+                            
+                            <div class="additional-info">
+                                <div class="product-color"></div>
+                            </div>
+
+                            <div class="handle-counter" id="handleCounter">
+                                <button class="counter-minus btn btn-primary">-</button>
+                                <input type="text" value="3">
+                                <button class="counter-plus btn btn-primary">+</button>
+                            </div>
+
+                            <div class="price">R$88,88</div>
+                        </div>
+                    </div>
+
+                    <div class="single-cart-product">
+                        <img src="img/prod3.png" alt="product name">
+                        <div class="cart-product-info">
+                            <span class="product-name">Nome do Produto</span>
+                            <button class="close-btn">
+                                <i class="fa fas fa-times"></i>
+                            </button>
+                            
+                            <div class="additional-info">
+                                <div class="product-color"></div>
+                            </div>
+
+                            <div class="handle-counter" id="handleCounter">
+                                <button class="counter-minus btn btn-primary">-</button>
+                                <input type="text" value="3">
+                                <button class="counter-plus btn btn-primary">+</button>
+                            </div>
+
+                            <div class="price">R$88,88</div>
+                        </div>
+                    </div>
+
+                    <div class="single-cart-product">
+                        <img src="img/prod3.png" alt="product name">
+                        <div class="cart-product-info">
+                            <span class="product-name">Nome do Produto</span>
+                            <button class="close-btn">
+                                <i class="fa fas fa-times"></i>
+                            </button>
+                            
+                            <div class="additional-info">
+                                <div class="product-color"></div>
+                            </div>
+
+                            <div class="handle-counter" id="handleCounter">
+                                <button class="counter-minus btn btn-primary">-</button>
+                                <input type="text" value="3">
+                                <button class="counter-plus btn btn-primary">+</button>
+                            </div>
+
+                            <div class="price">R$88,88</div>
+                        </div>
+                    </div>
+
+                    <div class="single-cart-product">
+                        <img src="img/prod3.png" alt="product name">
+                        <div class="cart-product-info">
+                            <span class="product-name">Nome do Produto</span>
+                            <button class="close-btn">
+                                <i class="fa fas fa-times"></i>
+                            </button>
+                            
+                            <div class="additional-info">
+                                <div class="product-color"></div>
+                            </div>
+
+                            <div class="handle-counter" id="handleCounter">
+                                <button class="counter-minus btn btn-primary">-</button>
+                                <input type="text" value="3">
+                                <button class="counter-plus btn btn-primary">+</button>
+                            </div>
+
+                            <div class="price">R$88,88</div>
+                        </div>
+                    </div>
+
+                    <div class="total-price">
+                        <span>TOTAL</span>
+                        <span class="total">R$88,88</span>
+                    </div>
+
+                    <div class="cart-action-btns">
+                        <button class="continue">CONTINUAR COMPRANDO</button>
+                        <button class="checkout">CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-block">
+            <div class="promo-line">
+                <div class="lil-container">
+                    <p><span>Other</span> promo text line</p>
+                    <p><span>FRETE GRATIS</span> PARA COMPRAS ACIMA DE R$300,00</p>
+                    <p><span>One more</span> promo line</p>
+                </div>
+            </div>
+            
+            <div class="banner-slider">
+                <div class="slider single-item slick-slider slick-dotted">
+                    <div class="slick-slide">
+                        <img src="img/wrapper-slider 1.png" alt="banner">
+                    </div>
+
+                    <div class="slick-slide">
+                        <img src="img/wrapper-slider 1.png" alt="banner">
+                    </div>
+                    
+                    <div class="slick-slide slick-current slick-active">
+                        <div class="lil-container"> 
+                            <div class="banner-text">
+                                <div class="banner-title"><span>C&F</span> CLOTHING</div>
+                                <div class="banner-desc">SPORTS & Lifestyle</div>
+                                <button class="banner-btn">CONFIRA</button>
+                            </div>
+                        </div>
+                        <img src="img/wrapper-slider 1.png" alt="banner">
+                    </div>
+
+                    <div class="slick-slide">
+                        <img src="img/wrapper-slider 1.png" alt="banner">
+                    </div>
+
+                    <div class="slick-slide">
+                        <img src="img/wrapper-slider 1.png" alt="banner">
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        
+        <div class="lil-container">
+            <div class="product-block">
+                <h2>PRODUTOS EM DESTAQUE</h2>
+
+                <div class="product-slider">
+                    <div class="single-product">
+                        <a href="#" class="product-pic">                            
+                            <img src="img/prod1.png" alt="product 1">
+                            <button class="buy-btn">COMPRAR</button>
+                        </a>
+                        <div class="price">
+                            <div class="main-price">R$88,88</div>
+                            <div class="discounted">2X R$44,44</div>
+                        </div>
+                    </div>
+
+                    <div class="single-product">
+                        <a href="#" class="product-pic">                            
+                            <img src="img/prod2.png" alt="product 2">
+                            <button class="buy-btn">COMPRAR</button>
+                        </a>
+                        <div class="price">
+                            <div class="main-price">R$88,88</div>
+                            <div class="discounted">2X R$44,44</div>
+                        </div>
+                    </div>
+
+                    <div class="single-product">
+                        <a href="#" class="product-pic">
+                            <div class="discount-sign">
+                                <span>20%</span>
+                            </div>                            
+                            <img src="img/prod3.png" alt="product 3">
+                            <button class="buy-btn">COMPRAR</button>
+                        </a>
+                        <div class="price">
+                            <div class="main-price">R$88,88</div>
+                            <div class="discounted">2X R$44,44</div>
+                        </div>
+                    </div>
+
+                    <div class="single-product">
+                        <a href="#" class="product-pic">                        
+                            <img src="img/prod4.png" alt="product 4">
+                            <button class="buy-btn">COMPRAR</button>
+                        </a>
+                        <div class="price">
+                            <div class="main-price old">R$88,88</div>
+                            <div class="discounted">2X R$44,44</div>
+                        </div>
+                    </div>
+
+                    <div class="single-product">
+                        <a href="#" class="product-pic">                            
+                            <img src="img/prod5.png" alt="product 5">
+                            <button class="buy-btn">COMPRAR</button>
+                        </a>
+                        <div class="price">
+                            <div class="main-price">R$88,88</div>
+                            <div class="discounted">2X R$44,44</div>
+                        </div>
+                    </div>
+
+                    <div class="single-product">
+                        <a href="#" class="product-pic">                            
+                            <img src="img/prod6.png" alt="product 6">
+                            <button class="buy-btn">COMPRAR</button>
+                        </a>
+                        <div class="price">
+                            <div class="main-price old">R$88,88</div>
+                            <div class="discounted">2X R$44,44</div>
+                        </div>
+                    </div>
+
+                    <div class="single-product">
+                        <a href="#" class="product-pic">                            
+                            <img src="img/prod2.png" alt="another product">
+                            <button class="buy-btn">COMPRAR</button>
+                        </a>
+                        <div class="price">
+                            <div class="main-price old">R$88,88</div>
+                            <div class="discounted">2X R$44,44</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="category-block">
+                <a href="#" class="category">
+                    <img src="img/jet 1.png" alt="JAQUETAS">
+                    <span>JAQUETAS</span>
+                </a>
+                <a href="#" class="category">
+                    <img src="img/Rectangle 5.png" alt="SHORTS">
+                    <span>SHORTS</span>
+                </a>
+                <a href="#" class="category">
+                    <img src="img/jaket 1.png" alt="CORTA-VENTO">
+                    <span>CORTA-VENTO</span>
+                </a>
+                <a href="#" class="category">
+                    <img src="img/t-shirt 1.png" alt="CAMISAS">
+                    <span>CAMISAS</span>
+                </a>
+                <a href="#" class="category">
+                    <img src="img/cantas 1.png" alt="CALCAS">
+                    <span>CALCAS</span>
+                </a>
+                <a href="#" class="category">
+                    <img src="img/kamisetas 1.png" alt="CAMISETAS">
+                    <span>CAMISETAS</span>
+                </a>
+            </div>
+
+            <div class="insta-gallery-block">
+                <h2>GALERIA DO INSTAGRAM</h2>
+
+                <div class="insta-slider">
+                    <a href="#" class="single-insta-photo">
+                        <img src="img/insta1 1.png" alt="instagram photo 1">
+                        <div class="likes">
+                            <span>1323 likes</span>
+                        </div>
+                    </a>
+                    <a href="#" class="single-insta-photo">
+                        <img src="img/insta2 1.png" alt="instagram photo 2">
+                        <div class="likes">
+                            <span>138886 likes</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="single-insta-photo">
+                        <img src="img/insta3 1.png" alt="instagram photo 3">
+                        <div class="likes">
+                            <span>123 likes</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="single-insta-photo">
+                        <img src="img/insta4 1.png" alt="instagram photo 4">
+                        <div class="likes">
+                            <span>14356 likes</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="single-insta-photo">
+                        <img src="img/insta5 1.png" alt="instagram photo 5">
+                        <div class="likes">
+                            <span>6523 likes</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="customers-block">
+                <h2>QUEM USA</h2>
+
+                <div class="customer-slider">
+                    <a href="#">
+                        <img src="img/usa1.png" alt="customer photo 1">
+                    </a>
+                    <a href="#">
+                        <img src="img/usa2.png" alt="customer photo 2">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/usa3.png" alt="customer photo 3">
+                    </a>
+                    
+                    <a href="#">
+                        <img src="img/usa4.png" alt="customer photo 4">
+                    </a>
+                </div>
+            </div>
+
+            <div class="newslatter-block">
+                <div class="heading">Newsletter</div>
+                <form action="" class="newsletter">
+                    <input type="text" placeholder="NOME">
+                    <input type="email" placeholder="ENDERECO DE EMAIL">
+                    <button type="submit">CADASTRAR</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="lil-container">
+                <ul class="footer-nav">
+                    <li><a href="#">SOBRE</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                    <li><a href="#">TERMOS & CONDICOES</a></li>
+                    <li><a href="#">POLITICA DE PRIVACIDADE</a></li>
+                </ul>
+
+                <ul class="soc-nav">
+                    <li><a href="#">
+                        <i class="fa fa-brands fa-facebook-f"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa fa-brands fa-twitter"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa fa-brands fa-instagram"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/handleCounter.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    
+</body>
+</html>
